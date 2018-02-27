@@ -77,15 +77,6 @@ function viewCart() {
     return;
 }
 
-viewCart();
-addToCart("mango");
-addToCart("nuts");
-addToCart("eggs")
-viewCart();
-total();
-removeFromCart("strawberry");
-removeFromCart("nuts");
-
 function total() {
   var cartLength = cart.length;
   var totalVal = 0;
@@ -119,3 +110,13 @@ function removeFromCart(item) {
 function placeOrder(cardNumber) {
   console.log(cardNumber.length);
 }
+
+viewCart();
+addToCart("mango");
+addToCart("nuts");
+addToCart("eggs");
+viewCart();
+total();
+removeFromCart("strawberry");
+removeFromCart("nuts");
+placeOrder();
