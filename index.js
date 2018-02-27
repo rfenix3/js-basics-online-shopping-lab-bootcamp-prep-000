@@ -80,9 +80,11 @@ function viewCart() {
 viewCart();
 addToCart("mango");
 addToCart("nuts");
-//addToCart("eggs")
+addToCart("eggs")
 viewCart();
 total();
+removeFromCart("strawberry");
+removeFromCart("nuts");
 
 function total() {
   var cartLength = cart.length;
@@ -98,7 +100,20 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var foundIt = 0;
+  for (let i=0; i<cart.length; i++){
+    var objProp = cart[i];
+    console.log(objProp);
+    if (objProp.hasOwnProperty(item)){
+      foundIt = 1;
+      cart.splice(i,1);
+    }
+  }
+  if (!foundIt) {
+    console.log("That item is not in your cart.")
+  }
+  console.log(cart);
+  return cart;
 }
 
 function placeOrder(cardNumber) {
