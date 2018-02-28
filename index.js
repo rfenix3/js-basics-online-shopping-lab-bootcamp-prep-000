@@ -108,7 +108,7 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  console.log(cardNumber.length);
+  console.log(arguments.length);
 }
 
 viewCart();
