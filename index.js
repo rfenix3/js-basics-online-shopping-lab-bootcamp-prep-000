@@ -119,4 +119,4 @@ viewCart();
 total();
 removeFromCart("strawberry");
 removeFromCart("nuts");
-placeOrder();
+placeOrder(123);
