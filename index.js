@@ -108,7 +108,9 @@ function removeFromCart(item) {
 }
 
 function placeOrder(cardNumber) {
-  console.log(arguments.length);
+  if (arguments.length === 0){
+    console.log()
+  };
 }
 
 viewCart();
