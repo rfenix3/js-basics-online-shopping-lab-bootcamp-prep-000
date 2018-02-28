@@ -124,4 +124,4 @@ viewCart();
 total();
 removeFromCart("strawberry");
 removeFromCart("nuts");
-placeOrder(123, 345);
+placeOrder(6543210);
